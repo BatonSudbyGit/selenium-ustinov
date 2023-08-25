@@ -170,6 +170,7 @@ public class TrainingApplineSeleniumTest {
     @AfterEach
     public void after() {
         driver.quit();
+        driver = null;
     }
 
     private WebElement waitForElementBeVisible(WebElement element) {

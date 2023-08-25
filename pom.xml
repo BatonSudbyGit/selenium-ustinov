@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>selenium</module>
+        <module>page-object</module>
+        <module>page-object-allure</module>
     </modules>
 
     <properties>

@@ -13,6 +13,7 @@
         <module>page-object</module>
         <module>page-object-allure</module>
         <module>page-object-cucumber</module>
+        <module>final-task-selenium</module>
     </modules>
 
     <properties>

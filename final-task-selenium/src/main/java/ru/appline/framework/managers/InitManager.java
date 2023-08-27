@@ -9,7 +9,7 @@ public class InitManager {
     private static final DriverManager driverManager = DriverManager.getDriverManager();
 
     /**
-     * Создание общего хранилища данных для всех фреймворков из пакета terminal_to_server
+     * Создание общего хранилища данных
      */
     public static DataWarehousing dw;
 

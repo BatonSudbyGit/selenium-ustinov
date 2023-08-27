@@ -2,16 +2,13 @@ package ru.appline.framework.utils;
 
 public class DataWarehousing {
 
-    /**
-     * Сохраненный список товаров на странице
-     */
-    private String listOfProducts;
+    private String tempValue;
 
-    public String getListOfProducts() {
-        return listOfProducts;
+    public String getTempValue() {
+        return tempValue;
     }
 
-    public void setListOfProducts(String listOfProducts) {
-        this.listOfProducts = listOfProducts;
+    public void setTempValue(String tempValue) {
+        this.tempValue = tempValue;
     }
 }

@@ -1,16 +1,16 @@
 package ru.appline.framework.steps;
 
-import io.cucumber.java.*;
+import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.BeforeAll;
+import io.cucumber.java.Scenario;
 import io.qameta.allure.Allure;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import ru.appline.framework.managers.DriverManager;
 import ru.appline.framework.managers.InitManager;
-import ru.appline.framework.managers.PropertiesManager;
 
 import java.io.ByteArrayInputStream;
-
-import static ru.appline.framework.utils.constants.PropertiesConstants.BASE_URL;
 
 public class Hooks {
 
@@ -20,11 +20,6 @@ public class Hooks {
     public static void beforeAll() {
         InitManager.initFramework();
     }
-
-//    @Before
-//    public void beforeEach() {
-//        driverManager.getDriver().get(PropertiesManager.getPropertyManager().getProperty(BASE_URL));
-//    }
 
     @After
     public void after(Scenario scenario) {

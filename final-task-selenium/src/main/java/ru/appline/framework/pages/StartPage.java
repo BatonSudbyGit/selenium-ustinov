@@ -5,9 +5,6 @@ import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import ru.appline.framework.managers.DriverManager;
-
-import java.util.List;
 
 import static ru.appline.framework.utils.constants.CommonXPathConstants.CATALOG_BUTTON_XPATH;
 

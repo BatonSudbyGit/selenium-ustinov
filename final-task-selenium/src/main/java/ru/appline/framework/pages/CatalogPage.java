@@ -22,7 +22,8 @@ public class CatalogPage extends BasePage {
 
     public CatalogPage checkCatalogPageOpen(String actionPage) {
         DateTimeHandler.waitTimeOutSeconds(1);
-        String color = waitUtilElementToBeVisible(driverManager.getDriver().findElement(By.xpath(CATALOG_BUTTON_XPATH))).getCssValue("background-color");
+        String color = waitUtilElementToBeVisible(driverManager.getDriver().findElement(By.xpath(CATALOG_BUTTON_XPATH)))
+                .getCssValue("background-color");
         String colorName;
         switch (actionPage) {
             case "открыта":
@@ -49,5 +50,4 @@ public class CatalogPage extends BasePage {
         fail("В списке каталога нет данной категории товаров: " + categoryName);
         return pageManager.getSubCategoryPage();
     }
-
 }

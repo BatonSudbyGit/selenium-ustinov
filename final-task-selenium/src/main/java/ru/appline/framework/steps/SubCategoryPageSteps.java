@@ -13,7 +13,7 @@ public class SubCategoryPageSteps {
         pageManager.getSubCategoryPage().selectSubCategoryFromList(subCategory);
     }
 
-    @Когда("Проверить, что открыта страница подкатегории товаров (.*)")
+    @Когда("^Проверить, что открыта страница подкатегории товаров (.*)$")
     public void checkSubCategoryPageOpened(String subModulePage) {
         pageManager.getSubCategoryPage().checkSubCategoryPageOpened(subModulePage);
     }
@@ -29,13 +29,18 @@ public class SubCategoryPageSteps {
                 pageManager.getSubCategoryPage().fillFiltersBlockInputField(key, value));
     }
 
+    @Когда("Выбираем чекбокс производителя {string}")
+    public void selectCheckbox(String checkboxName) {
+        pageManager.getSubCategoryPage().selectCheckbox(checkboxName);
+    }
+
     @Когда("^Проверяем, что список товаров на странице обновился$")
     public void checkProductsListIsReload() {
         pageManager.getSubCategoryPage().checkListOfProductsIsReloaded();
     }
 
-    @Когда("^Проверяем, что на странице отображается (.*) това(?:(ра|р|ров))$")
-    public void checkAmountOfProductOnPage(int amundOfProducts, String temp) {
+    @Когда("^Проверяем, что количество товаров, которые отображаются на странице равняется: (.*)$")
+    public void checkAmountOfProductOnPage(int amundOfProducts) {
         pageManager.getSubCategoryPage().checkAmountOfProductOnPage(amundOfProducts);
     }
 

@@ -84,8 +84,8 @@ public class SubCategoryPage extends BasePage {
     }
 
     public SubCategoryPage saveOrCompareTitleOfElement(String actions, String elementNumber) {
-        WebElement listOfElements = waitUtilElementToBeClickable(driverManager.getDriver()
-                .findElement(By.xpath(String.format(ELEMENT_OF_LIST_PRODUCTS_XPATH, elementNumber))));
+        WebElement listOfElements = driverManager.getDriver()
+                .findElement(By.xpath(String.format(ELEMENT_OF_LIST_PRODUCTS_XPATH, elementNumber)));
         if (!actions.contains("Сравнить")) {
             dw.setTempValue(listOfElements.getAttribute("outerText"));
             return this;

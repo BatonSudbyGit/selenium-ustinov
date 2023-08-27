@@ -44,8 +44,8 @@ public class SubCategoryPageSteps {
         pageManager.getSubCategoryPage().checkAmountOfProductOnPage(amundOfProducts);
     }
 
-    @Когда("^(Сохранить|Сравнить) название товара под номером (.*) (?:(с сохраненным|во временную переменную))$")
-    public void saveTitleOfElement(String actions, String elementNumber, String temp) {
+    @Когда("^(Сохранить|Сравнить) название товара под номером (.*)$")
+    public void saveTitleOfElement(String actions, String elementNumber) {
         pageManager.getSubCategoryPage().saveOrCompareTitleOfElement(actions, elementNumber);
     }
 }

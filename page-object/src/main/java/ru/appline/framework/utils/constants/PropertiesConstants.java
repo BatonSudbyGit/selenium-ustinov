@@ -9,4 +9,6 @@ public class PropertiesConstants {
     public static final String USER_PASSWORD = "user.password";
 
     public static final String PATH_CHROME_DRIVER_WINDOWS = "path.chrome.driver.windows";
+
+    public static final String PATH_CHROME_DRIVER_MAC = "path.chrome.driver.mac";
 }

@@ -11,4 +11,6 @@ public class PropertiesConstants {
     public static final String PATH_CHROME_DRIVER_WINDOWS = "path.chrome.driver.windows";
 
     public static final String PATH_CHROME_DRIVER_MAC = "path.chrome.driver.mac";
+
+    public static final String PATH_CHROME_DRIVER_LINUX = "path.chrome.driver.linux";
 }

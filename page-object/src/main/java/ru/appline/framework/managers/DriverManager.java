@@ -45,6 +45,7 @@ public class DriverManager {
 
     private void initDriver() {
         String osName = OS.current().name();
+        System.out.println(osName);
         if (osName.equals("WINDOWS")) {
             System.setProperty("webdriver.chrome.driver", properties.getProperty(PATH_CHROME_DRIVER_WINDOWS));
         } else {
